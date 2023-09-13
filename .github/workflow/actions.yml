@@ -1,25 +1,25 @@
 name: norminette
 
 on:
-		[push]:
-				branches:
-						- master
+	[push]:
+		branches:
+			- master
 
 jobs:
-    norminette:
-		  run-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: src
+	norminette:
+		run-on: ubuntu-latest
+		defaults:
+			run:
+				working-directory: src
 
-      steps:
-        name: checkout
-        uses: actions/checkout@v4
+		steps:
+			name: checkout
+			uses: actions/checkout@v4
 
-        name: config env
-        run: |
-          sudo apt install -y python3 pip3
-          pip3 install norminette
+			name: config env
+			run: |
+				sudo apt install -y python3 pip3
+				pip3 install norminette
 
-        name: norminette
-        run: norminette
+			name: norminette
+			run: norminette
