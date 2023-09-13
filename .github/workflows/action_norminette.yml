@@ -24,3 +24,6 @@ jobs:
 
       - name: norminette
         run: norminette
+
+      - name: build push swap
+        run: cd .. && make && ls
