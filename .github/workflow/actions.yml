@@ -1,7 +1,7 @@
 name: norminette
 
 on:
-		push:
+		[push]:
 				branches:
 						- master
 
