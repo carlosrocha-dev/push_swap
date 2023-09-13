@@ -18,8 +18,9 @@ jobs:
 
       - name: config env
         run: |
-          sudo apt install -y python3 pip3
-          pip3 install norminette
+          sudo apt install -y python3
+          python3 -m pip install --upgrade pip setuptools norminette
+          python3 -m pip install norminette
 
       - name: norminette
         run: norminette
