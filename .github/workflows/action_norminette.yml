@@ -27,3 +27,6 @@ jobs:
 
       - name: build push swap
         run: cd .. && make && ls
+
+      - name: test rotate
+        run: cd ../tests && make && ./push_swap_test
