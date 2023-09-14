@@ -18,7 +18,7 @@ CFLAGS = -Wall -Wextra -Werror $(INCLUDES) -g #-fsanitize=address
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(CC) $(CFLAGS) test_rotate.c -c $(INCLUDES) -I ./minunit/
+	$(CC) $(CFLAGS) test_rotate.c -c $(INCLUDES) -I .
 	$(CC) $(CFLAGS) $(OBJECTS) test_rotate.o -o $(NAME)
 
 %.o: $(SRC_PATH)%.c

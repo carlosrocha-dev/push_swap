@@ -1,4 +1,4 @@
-#include "./minunit/minunit.h"
+#include "minunit.h"
 #include "../includes/mandatory/push_swap.h"
 
 
